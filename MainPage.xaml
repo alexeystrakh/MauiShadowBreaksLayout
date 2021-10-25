@@ -1,0 +1,20 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiShadowBreaksLayout.MainPage"
+             BackgroundColor="{DynamicResource SecondaryColor}">
+
+    <ScrollView BackgroundColor="Goldenrod">
+        <Grid BackgroundColor="Aqua"
+              WidthRequest="300"
+              HeightRequest="200"
+              VerticalOptions="Center"
+              HorizontalOptions="Center">
+            <Grid.Shadow>
+                <Shadow
+                   Radius="12"
+                   Offset="6,6"
+                   Opacity="0.75" />
+            </Grid.Shadow>
+        </Grid>
+    </ScrollView>
+</ContentPage>
